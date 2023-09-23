@@ -1,0 +1,66 @@
+# 4
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int len;
+	cout<<"Enter The len of array: ";
+	cin>>len;
+	int arr[len];
+	int temp;
+	for(int i =0;i<len;i++)
+	{
+		cout<<"Enter the Value of arr["<<i+1<<"]: ";
+		cin>>arr[i];
+	}
+	
+	for(int i =0;i<len;i++)
+	{
+		for(int j =i;j<len;j++)
+		{
+			if(arr[i]>arr[j])
+			{
+				temp = arr[i];	
+				arr[i]= arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+	
+	cout<<"Largest in Given Array is ";
+	
+	for(int i =0;i<3;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+}
+
+# 6
+
+#include<iostream>
+using namespace std;
+
+void rotation(int arr[],int d)
+{
+	for(int i = d-1;i>=0;i--)
+	{
+		cout<<arr[i] << " ";	
+	}	
+}
+
+int main()
+{
+	int num;
+	cout<<"Enter The len: ";
+	cin>>num;
+	int arr[num];
+	for(int i=0;i<num;i++)
+	{
+		cout<<"Enter Value of arr["<<i+1<<"]: ";
+		cin>>arr[i];
+	}
+	
+	rotation(arr,num);
+}

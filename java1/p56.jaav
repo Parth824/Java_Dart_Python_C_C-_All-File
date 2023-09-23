@@ -1,0 +1,17 @@
+import java.awt.*;
+import java.applet.*;
+
+/*
+<applet code = "p56" width = "800" height = "800">
+</applet>
+*/
+
+public class p56 extends Applet
+{
+	public void paint(Graphics g)
+	{
+		int a[] ={226,102,311};
+		int b[] ={94,333,333};
+		g.drawPolygon(a,b,3);
+	}
+}

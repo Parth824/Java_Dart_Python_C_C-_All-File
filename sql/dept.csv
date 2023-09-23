@@ -1,0 +1,6 @@
+,d_id,d_name,no_of_employee,total_payment,average_pyment
+0,101,Sales,5,60000,12000.0
+1,102,Marketing,8,780000,97500.0
+2,103,Finance,9,600000,66666.66666666667
+3,104,Account,2,150000,75000.0
+4,105,it,10,2000000,200000.0
